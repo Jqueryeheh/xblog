@@ -2,14 +2,14 @@ import express from 'express'
 
 const app = express();
 
-let dir ="./" 
+let dir =__dirname
 
 app.use(express.static(dir))
 
 let port = 3000;
 
 app.get("/",(req,res)=>{
-	res.sendFile("./index.html");
+	res.sendFile(dir+"/index.html");
 })
 
 app.listen(port,()=>{
