@@ -9,7 +9,7 @@ const app = express();
 
 let dir = path.join(__dirname, 'public');
 
-app.use(express.static(dir))
+app.use(__dirname)
 
 let port = 3000;
 
