@@ -13,7 +13,7 @@ app.use(express.static(dir))
 let port = 3000;
 
 app.get("/",(req,res)=>{
-	res.sendFile(path.join(__dirname, 'index.html'));
+	res.sendFile(dir+"index.html");
 })
 
 app.listen(port,()=>{
