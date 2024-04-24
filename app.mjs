@@ -2,7 +2,7 @@ import express from 'express'
 
 const app = express();
 
-let dir ="" 
+let dir ="./" 
 
 app.use(express.static(dir))
 
