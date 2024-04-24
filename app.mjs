@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-let dir = "file:///opt/render/project/src";
+let dir = "/opt/render/project/src/";
 app.use(express.static(dir))
 
 let port = 3000;
