@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 
 app.listen(port,()=>{
 	console.log("started");
-	exec('ls /', (error, stdout, stderr) => {
+	exec('whoami', (error, stdout, stderr) => {
      if (error) {
        console.log(error) 
      }
