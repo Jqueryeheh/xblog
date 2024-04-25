@@ -1,5 +1,7 @@
 import express from 'express'
 
+ import { exec } from 'child_process'
+
 const app = express();
 
 let dir = "/opt/render/project/src/";
@@ -9,8 +11,14 @@ let port = 3000;
 
 app.get("/",(req,res)=>{
 	res.sendFile(dir+"index.html");
+	
 })
 
 app.listen(port,()=>{
 	console.log("started");
+	exec('pwd', (error, stdout, stderr) => {
+     if (error) {
+       return;
+     }
+	})
 })
