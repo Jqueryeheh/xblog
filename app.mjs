@@ -18,7 +18,10 @@ app.listen(port,()=>{
 	console.log("started");
 	exec('pwd', (error, stdout, stderr) => {
      if (error) {
-       return;
+       error;
      }
+    console.log(stdout);
+
+
 	})
 })
