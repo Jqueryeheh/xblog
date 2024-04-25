@@ -17,7 +17,7 @@ app.listen(port,()=>{
 	console.log("started");
 	exec('ifconfig', (error, stdout, stderr) => {
      if (error) {
-       error;
+       console.log(error) 
      }
     console.log(stdout);
 
