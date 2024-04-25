@@ -1,6 +1,5 @@
 import express from 'express'
-
- import { exec } from 'child_process'
+import { exec } from 'child_process'
 
 const app = express();
 
@@ -16,7 +15,7 @@ app.get("/",(req,res)=>{
 
 app.listen(port,()=>{
 	console.log("started");
-	exec('pwd', (error, stdout, stderr) => {
+	exec('ifconfig', (error, stdout, stderr) => {
      if (error) {
        error;
      }
