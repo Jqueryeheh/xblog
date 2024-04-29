@@ -1,5 +1,5 @@
 import express from 'express'
-import { exec } from 'child_process'
+/*import { exec } from 'child_process'*/
 
 const app = express();
 
@@ -15,12 +15,12 @@ app.get("/",(req,res)=>{
 
 app.listen(port,()=>{
 	console.log("started");
-	exec('ls', (error, stdout, stderr) => {
+	/*exec('ls', (error, stdout, stderr) => {
      if (error) {
        console.log(error) 
      }
     console.log(stdout);
 
 
-	})
+	})*/
 })
